@@ -1,0 +1,268 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "errp-system-validation;validate-the-login-functionality-of-the-erp-system",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Validate the login functionality of the ERP system",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 811087599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user navigate browser to the ERP login page",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1704423199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "the user enters valid credentials \"admin\" and \"master\"",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 285305199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user click login button",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1064331299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the user should be successfully logged in and redirected to the dashboard",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2085771399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2491200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "errp-system-validation;validate-the-supplier-creation-functionality-of-the-erp-system",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Validate the supplier creation functionality of the ERP system",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 545392799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "user navigate browser to the ERP login page",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1170502999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the user enters valid credentials \"admin\" and \"master\"",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201011399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user click login button",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 724243400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User navigates to add supplier page",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2735313699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user capture supplier number",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75528699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "user fill supplier deatls \"Debadatta\",\"Hyd1\",\"amerpet\",\"India\",\"Wipro\",\"3456789\",\"test@gmail.com\",\"4567890\",\"new Supplier1\"",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 280510899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "user click add button",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92982900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "user click confirm ok button",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1311051400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "user click Alert ok button",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:69"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5012959100,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\mishr\\Downloads\\cucumber_ERP_lyst1781092360122\\cucumber-ERP\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:588:17)\n    at processTimers (node:internal/timers:523:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "user Navigate to supplier table",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:74"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "user validate supplier number",
+            "match": {
+              "location": "src\\test\\steps\\SupplierSteps.ts:83"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2227900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@supplier",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "errp-system-validation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "ERRP System Validation",
+    "tags": [],
+    "uri": "src\\test\\features\\ERP.feature"
+  }
+]

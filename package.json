@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.2",
+    "multiple-cucumber-html-reporter": "^4.0.0"
+  },
+  "scripts": {
+    "test":"npx cucumber-js"
+  }
+}
